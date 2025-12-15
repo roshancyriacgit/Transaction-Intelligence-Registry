@@ -1,0 +1,26 @@
+[
+  {
+    "authority": "MCA/ROC",
+    "form": "PAS-3",
+    "name": "Return of Allotment (illustrative)",
+    "trigger": "issue_of_shares"
+  },
+  {
+    "authority": "MCA/ROC",
+    "form": "MGT-14",
+    "name": "Filing of resolutions (illustrative)",
+    "trigger": "board_or_shareholder_resolution"
+  },
+  {
+    "authority": "RBI",
+    "form": "FC-GPR",
+    "name": "FDI reporting (illustrative)",
+    "trigger": "inbound_fdi_equity"
+  },
+  {
+    "authority": "State Registrar",
+    "form": "Registration application",
+    "name": "Property registration process (illustrative)",
+    "trigger": "immovable_sale"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "rule_pack_id": "TIR-DEMO-CORE",
+  "version": "0.1.0",
+  "scope": {
+    "country": "India",
+    "level": "national"
+  },
+  "provenance": {
+    "sources": [
+      {
+        "type": "statute",
+        "name": "Companies Act, 2013",
+        "id": "(illustrative)"
+      },
+      {
+        "type": "regulator",
+        "name": "RBI/FEMA",
+        "id": "(illustrative)"
+      }
+    ],
+    "last_verified": "2025-12-15",
+    "disclaimer": "Illustrative demo rule pack; not authoritative."
+  },
+  "rules": [
+    {
+      "id": "TIR-COMP-ROC-ISSUE-001",
+      "title": "Share issuance: corporate actions + ROC touchpoints (illustrative)",
+      "domain": "companies",
+      "trigger": "issue_of_shares",
+      "applies_if": {
+        "transaction_type": [
+          "investment"
+        ],
+        "asset_class": [
+          "shares",
+          "securities"
+        ]
+      },
+      "references": [
+        {
+          "type": "statute",
+          "name": "Companies Act, 2013",
+          "note": "verify"
+        }
+      ],
+      "steps": [
+        "Check authority in Articles and arrangements (verify).",
+        "Prepare approvals as applicable (verify).",
+        "Allot shares; update statutory registers (verify)."
+      ],
+      "forms": [
+        {
+          "authority": "MCA/ROC",
+          "form": "PAS-3",
+          "timing": "Post-allotment (verify)"
+        }
+      ],
+      "risk_flags": [
+        "timing_risk",
+        "governance_risk"
+      ],
+      "disclaimer_level": "illustrative"
+    }
+  ]
+}

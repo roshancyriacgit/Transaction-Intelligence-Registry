@@ -1,0 +1,28 @@
+{
+  "tir_version": "0.1",
+  "case_id": "DEMO-CASE-001",
+  "intent": {
+    "transaction_type": "investment",
+    "asset_class": "shares",
+    "parties": [
+      {
+        "role": "Investor",
+        "party_type": "foreign_entity",
+        "name": "Alpha Ventures"
+      },
+      {
+        "role": "Issuer",
+        "party_type": "company",
+        "name": "Beta Private Limited"
+      }
+    ],
+    "jurisdiction": {
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "sector": "general"
+    },
+    "timing": "staged",
+    "notes": "Seed investment; primary issuance."
+  }
+}

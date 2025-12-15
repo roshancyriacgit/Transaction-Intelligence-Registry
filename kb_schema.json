@@ -1,0 +1,47 @@
+{
+  "kb_version": "0.2-demo",
+  "entities": {
+    "transaction_type": [
+      "sale",
+      "purchase",
+      "investment",
+      "loan",
+      "lease",
+      "license",
+      "assignment",
+      "merger",
+      "service"
+    ],
+    "asset_class": [
+      "money",
+      "shares",
+      "securities",
+      "immovable_property",
+      "movable_goods",
+      "services",
+      "ip_rights",
+      "hybrid"
+    ],
+    "party_type": [
+      "individual",
+      "company",
+      "llp",
+      "partnership",
+      "trust",
+      "govt",
+      "foreign_entity"
+    ]
+  },
+  "rule_record_fields": [
+    "id",
+    "title",
+    "domain",
+    "trigger",
+    "applies_if",
+    "references",
+    "steps",
+    "forms",
+    "notes",
+    "risk_flags"
+  ]
+}

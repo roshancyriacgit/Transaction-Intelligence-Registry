@@ -1,0 +1,143 @@
+[
+  {
+    "id": "TIR-COMP-ROC-ISSUE-001",
+    "title": "Share issuance (India): core corporate actions + ROC touchpoints (illustrative)",
+    "domain": "companies",
+    "trigger": "issue_of_shares",
+    "applies_if": {
+      "asset_class": [
+        "shares",
+        "securities"
+      ],
+      "transaction_type": [
+        "investment"
+      ]
+    },
+    "references": [
+      {
+        "type": "statute",
+        "name": "Companies Act, 2013",
+        "note": "illustrative-only in prototype"
+      },
+      {
+        "type": "rules",
+        "name": "Share Capital & Debentures Rules",
+        "note": "illustrative-only"
+      }
+    ],
+    "steps": [
+      "Check authority in Articles and existing shareholder arrangements (if any).",
+      "Prepare board/shareholder approvals as applicable (verify).",
+      "Allot shares; update statutory registers and cap table."
+    ],
+    "forms": [
+      {
+        "authority": "MCA/ROC",
+        "form": "PAS-3",
+        "timing": "Post-allotment (verify)"
+      },
+      {
+        "authority": "MCA/ROC",
+        "form": "MGT-14",
+        "timing": "If applicable (verify)"
+      }
+    ],
+    "notes": "Illustrative pack entry to demonstrate routing + outputs.",
+    "risk_flags": [
+      "governance_risk",
+      "timing_risk"
+    ]
+  },
+  {
+    "id": "TIR-FEMA-RBI-FDI-001",
+    "title": "Inbound foreign investment: route checks + RBI reporting (illustrative)",
+    "domain": "fema_rbi",
+    "trigger": "inbound_fdi_equity",
+    "applies_if": {
+      "party_type": [
+        "foreign_entity"
+      ],
+      "asset_class": [
+        "shares",
+        "securities"
+      ],
+      "transaction_type": [
+        "investment"
+      ]
+    },
+    "references": [
+      {
+        "type": "regulator",
+        "name": "RBI/FEMA",
+        "note": "illustrative-only"
+      }
+    ],
+    "steps": [
+      "Confirm sectoral route/caps and whether approval is required (verify).",
+      "Confirm pricing/valuation compliance (verify).",
+      "Complete post-transaction reporting."
+    ],
+    "forms": [
+      {
+        "authority": "RBI",
+        "form": "FC-GPR",
+        "timing": "Post-allotment (verify)"
+      }
+    ],
+    "notes": "Illustrative-only.",
+    "risk_flags": [
+      "regulatory_risk",
+      "pricing_risk"
+    ]
+  },
+  {
+    "id": "TIR-PROP-REG-IMMOV-001",
+    "title": "Immovable property transfer: stamp + registration path (illustrative)",
+    "domain": "property",
+    "trigger": "immovable_sale",
+    "applies_if": {
+      "asset_class": [
+        "immovable_property"
+      ],
+      "transaction_type": [
+        "sale",
+        "purchase"
+      ]
+    },
+    "references": [
+      {
+        "type": "statute",
+        "name": "Transfer of Property Act, 1882",
+        "note": "illustrative-only"
+      },
+      {
+        "type": "statute",
+        "name": "Registration Act, 1908",
+        "note": "illustrative-only"
+      },
+      {
+        "type": "state",
+        "name": "State Stamp Act/Rules",
+        "note": "state-wise variation"
+      }
+    ],
+    "steps": [
+      "Confirm title chain and encumbrances (process step).",
+      "Compute stamp duty per state schedule (verify).",
+      "Execute and register instrument with Sub-Registrar."
+    ],
+    "forms": [
+      {
+        "authority": "State Registrar",
+        "form": "Registration application",
+        "timing": "At registration"
+      }
+    ],
+    "notes": "Illustrative-only; state variations exist.",
+    "risk_flags": [
+      "title_risk",
+      "state_variation",
+      "irreversibility_risk"
+    ]
+  }
+]
